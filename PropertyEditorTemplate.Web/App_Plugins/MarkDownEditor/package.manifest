@@ -1,0 +1,17 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "My.MarkdownEditor",
+            "name": "My markdown editor",
+            "icon": "icon-code",
+            "group": "Rich Content",
+            "editor": {
+                "view": "~/App_Plugins/MarkDownEditor/markdowneditor.html"
+            }
+        }
+    ]
+    ,
+    "javascript": [
+        "~/App_Plugins/MarkDownEditor/markdowneditor.controller.js"
+    ]
+}
