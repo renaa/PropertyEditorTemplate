@@ -47,9 +47,12 @@
     {
         <div class="blogposts">
 
-            @foreach (ContentModels.Blogpost post in pagedBlogposts)
+            @foreach (var p in pagedBlogposts)
             {
-                <a href="@post.Url" class="blogpost">
+                if(p is ContentModels.Blogpost post)
+                {
+
+                <a href="@post.Url()" class="blogpost">
                     <div class="blogpost-meta">
                         <small class="blogpost-date">@post.CreateDate.ToShortDateString()</small>
                         <small class="blogpost-cat">
@@ -59,6 +62,8 @@
                     <h3 class="blogpost-title">@post.PageTitle</h3>
                     <div class="blogpost-excerpt">@post.Excerpt</div>
                 </a>
+                }
+
             }
         </div>
     }

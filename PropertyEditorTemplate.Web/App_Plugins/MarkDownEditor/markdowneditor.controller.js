@@ -3,6 +3,13 @@
         // inject umbracos assetsService
         function ($scope, assetsService, $timeout) {
 
+            console.log($scope, $scope.model);
+
+             
+            if ($scope.model.value === null || $scope.model.value === "") {
+                $scope.model.value = $scope.model.config.defaultValue;
+            }
+
             // tell the assetsService to load the markdown.editor libs from the markdown editors
             // plugin folder
             assetsService
