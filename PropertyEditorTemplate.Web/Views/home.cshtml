@@ -8,7 +8,15 @@
          style="background-image: url('@backgroundImage')">
     <div class="section__hero-content">
         <div>
-            @Model.TestPropertyEditor
+            @* render markdown *@
+            @using HeyRed.MarkdownSharp
+            @{ 
+                var value = Model.Value<string>("TestPropertyEditor");
+                var html = new Markdown().Transform(value);
+            }
+            @Html.Raw(html)
+
+
         </div>
         <h1>@Model.HeroHeader</h1>
         <p class="section__description">@Model.HeroDescription</p>

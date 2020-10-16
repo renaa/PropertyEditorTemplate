@@ -1,11 +1,10 @@
 ﻿angular.module("umbraco")
     .controller("My.MarkdownEditorController",
-        // inject umbracos assetsService
-        function ($scope, assetsService, $timeout) {
+        // inject umbracos assetsService and editor service
+        function ($scope, assetsService, $timeout, editorService) {
 
-            console.log($scope, $scope.model);
+            console.log($scope, editorService);
 
-             
             if ($scope.model.value === null || $scope.model.value === "") {
                 $scope.model.value = $scope.model.config.defaultValue;
             }
@@ -24,6 +23,24 @@
                         var converter2 = new Markdown.Converter();
                         var editor2 = new Markdown.Editor(converter2, "-" + $scope.model.alias);
                         editor2.run();
+
+                        // subscribe to the image dialog clicks
+                        editor2.hooks.set("insertImageDialog", function (callback) {
+                            var mediaPicker = {
+                                disableFolderSelect: true,
+                                submit: function (model) {
+                                    var selectedImagePath = model.selection[0].image;
+                                    callback(selectedImagePath);
+                                    editorService.close();
+                                },
+                                close: function () {
+                                    editorService.close();
+                                }
+                            };
+                            editorService.mediaPicker(mediaPicker);
+
+                            return true; // tell the editor that we'll take care of getting the image url
+                        });
                     });
                 });
 
