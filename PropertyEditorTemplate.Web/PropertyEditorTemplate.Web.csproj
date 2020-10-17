@@ -270,11 +270,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\MarkDownEditor\person.resource.js" />
+    <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Converter.js" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.fw.png" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.png" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.js" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Sanitizer.js" />
+    <Content Include="App_Plugins\MarkDownEditor\personpicker.html" />
+    <Content Include="App_Plugins\MarkDownEditor\personpicker.controller.js" />
     <Content Include="App_Plugins\MarkDownEditor\markdowneditor.controller.js" />
     <Content Include="App_Plugins\OsmMaps\assets\css\osmmaps.css" />
     <Content Include="App_Plugins\OsmMaps\assets\leaflet\images\layers-2x.png" />
@@ -348,6 +352,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Code\PersonApiController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
