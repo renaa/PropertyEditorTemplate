@@ -270,6 +270,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\Giphy\css\giphyPropertyEditor.styles.css" />
+    <Content Include="App_Plugins\Giphy\giphyPicker.html" />
+    <Content Include="App_Plugins\Giphy\giphyPropertyEditor.html" />
+    <Content Include="App_Plugins\Giphy\img\PoweredByGiphy.png" />
+    <Content Include="App_Plugins\Giphy\js\directive.js" />
+    <Content Include="App_Plugins\Giphy\js\giphyPicker.controller.js" />
+    <Content Include="App_Plugins\Giphy\js\giphyPropertyEditor.controller.js" />
     <Content Include="App_Plugins\MarkDownEditor\person.resource.js" />
     <Content Include="App_Data\Umbraco.sdf" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Converter.js" />
@@ -372,6 +379,7 @@
     <Content Include="App_Plugins\StarterKit\backoffice\tours\data-structure.json" />
     <Content Include="App_Plugins\StarterKit\package.manifest" />
     <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.less" />
+    <Content Include="App_Plugins\Giphy\package.manifest" />
     <None Include="App_Plugins\MarkDownEditor\package.manifest" />
     <None Include="packages.config" />
     <Content Include="Views\Blog.cshtml" />
