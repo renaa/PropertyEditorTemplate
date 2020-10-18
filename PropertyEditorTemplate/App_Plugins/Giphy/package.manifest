@@ -1,17 +1,31 @@
 ﻿{
-    "propertyEditors": [
-        {
-            "alias": "My.GiphyEditor",
-            "name": "My giphy editor",
-            "icon": "icon-smiley",
-            "group": "Media",
-            "editor": {
-                "view": "~/App_Plugins/Giphy/giphy.html"
-            }
-        }
-    ]
-    ,
-    "javascript": [
-        "~/App_Plugins/Giphy/js/giphy.controller.js"
-    ]
+  "propertyEditors": [
+    {
+      "alias": "My.GiphyEditor",
+      "name": "My giphy editor",
+      "icon": "icon-smiley-inverted",
+      "group": "media",
+      "editor": {
+        "view": "~/App_Plugins/Giphy/giphyPropertyEditor.html"
+      },
+      "prevalues": {
+        "fields": [
+          {
+            "label": "Enter the giphy api key",
+            "description": "Your giphy api key",
+            "key": "apiKey",
+            "view": "textstring"
+          }
+        ]
+      }
+    }
+  ],
+  "javascript": [
+    "~/App_Plugins/Giphy/js/giphyPropertyEditor.controller.js",
+    "~/App_Plugins/Giphy/js/giphyPicker.controller.js",
+    "~/App_Plugins/Giphy/js/directive.js"
+  ],
+  "css": [
+    "~/App_Plugins/Giphy/css/giphyPropertyEditor.styles.css"
+  ]
 }

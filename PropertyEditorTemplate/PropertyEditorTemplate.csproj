@@ -47,14 +47,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Plugins\Giphy\js\giphy.controller.js" />
-    <Content Include="App_Plugins\Giphy\giphy.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App_Plugins\Giphy\package.manifest" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Plugins\Giphy\css\" />
+    <Folder Include="App_Plugins\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
