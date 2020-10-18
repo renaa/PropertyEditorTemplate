@@ -1,0 +1,17 @@
+﻿{
+    "propertyEditors": [
+        {
+            "alias": "My.GiphyEditor",
+            "name": "My giphy editor",
+            "icon": "icon-smiley",
+            "group": "Media",
+            "editor": {
+                "view": "~/App_Plugins/Giphy/giphy.html"
+            }
+        }
+    ]
+    ,
+    "javascript": [
+        "~/App_Plugins/Giphy/js/giphy.controller.js"
+    ]
+}

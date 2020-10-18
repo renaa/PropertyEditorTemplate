@@ -47,17 +47,14 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Converter.js" />
-    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.fw.png" />
-    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.Icons.png" />
-    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.js" />
-    <Content Include="App_Plugins\MarkDownEditor\lib\Markdown.Sanitizer.js" />
-    <Content Include="App_Plugins\MarkDownEditor\markdowneditor.controller.js" />
-    <Content Include="App_Plugins\MarkDownEditor\markdowneditor.html" />
+    <Content Include="App_Plugins\Giphy\js\giphy.controller.js" />
+    <Content Include="App_Plugins\Giphy\giphy.html" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Plugins\MarkDownEditor\lib\Markdown.Editor.less" />
-    <None Include="App_Plugins\MarkDownEditor\package.manifest" />
+    <None Include="App_Plugins\Giphy\package.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Plugins\Giphy\css\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
